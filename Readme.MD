@@ -3,6 +3,7 @@ $cd 9.8.k8s-Helm-Nginx
 $ls -l
 
 helm install nginx .
+kubectl get pods -n expense
 helm upgrade nginx .
 
 helm status nginx
@@ -19,9 +20,7 @@ echo "<h1>This is nginx server using helm chart. </h1>" > /usr/share/nginx/html/
 http://a085fb8e0ad784ea1ab9c21fe27061fd-1774238623.us-east-1.elb.amazonaws.com
 
 # Comment below lines for nginx server.
-  location /api/ { 
-      proxy_pass http://backend:8080/;
-  }
-
-
-
+  
+  #location /api/ { 
+  #    proxy_pass http://backend:8080/;
+  #}
