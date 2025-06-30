@@ -1,5 +1,5 @@
 configmap:
-  port: 8080
+  port: 80
 deployment:
   replicas: 2
   imageVersion: latest # mainline-bookworm-perl
