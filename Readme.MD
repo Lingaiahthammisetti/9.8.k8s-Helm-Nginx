@@ -1,15 +1,29 @@
 $git clone https://github.com/Lingaiahthammisetti/9.8.k8s-Helm-Nginx.git
+
 $cd 9.8.k8s-Helm-Nginx
+
 $ls -l
-
+```
 helm install nginx .
+```
+```
 kubectl get pods -n expense
+```
+```
 helm upgrade nginx .
-
+```
+```
 helm status nginx
+```
+```
 helm list
+```
+```
 helm history nginx
+```
+```
 helm uninstall nginx
+```
 
 cd /usr/share/nginx/html/
 ls -l
